@@ -1,14 +1,13 @@
 ## Promedio notas 1 estudiante
-import array ## Python no incluye array
 
 average = 0
-notes = array.array('d', [])
+nota1 = float(input('Introduzca la primera nota'))
+nota2 = float(input('Introduzca la primera nota'))
+nota3 = float(input('Introduzca la primera nota'))
+nota4 = float(input('Introduzca la primera nota'))
+nota5 = float(input('Introduzca la primera nota'))
 
-for i in range(1, 6):
-    note = float(input(f'Ingrese la {i} nota: '))
-    notes.append(note)
-
-average = sum(notes) / len(notes)
+average = (nota1 + nota2 + nota3 + nota4 + nota5) / 5
 
 if average >= 3:
     print(f'Su promedio es de {average}. ¡Curso aprobado!')
